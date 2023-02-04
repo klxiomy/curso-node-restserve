@@ -5,7 +5,7 @@ class Server {
 
     constructor() {
         this.app = express()//creo en mi servidor la plicacion de express como una propiedad en el servidor
-        this.port = process.env.PORT
+        this.port = process.env.PORT || 3000;
         this.usuariosPath = '/api/usuarios';
 
         //Middlewares son funciones que siempre se van a ejecutar cuabdo se levante el servidor
